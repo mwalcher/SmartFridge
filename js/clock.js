@@ -1,11 +1,7 @@
 (function(){
 
   var time = document.querySelector("#clock");
-
-  function init(){
-    timeDisplay = "";
-    time.appendChild(timeDisplay);
-  }
+  var maintime = document.querySelector("#mainClock");
 
   function updateClock(){
     var currentTime = new Date();
@@ -29,9 +25,11 @@
 
     // Compose the string for display
     var currentTimeString = currentHours + ":" + currentMinutes + ":" + currentSeconds + " " + timeOfDay;
+    var currentTimeStringMain = currentHours + ":" + currentMinutes + " " + timeOfDay;
 
     // Update the time display
     time.innerHTML = currentTimeString;
+    maintime.innerHTML = currentTimeStringMain;
   }
 
   updateClock();

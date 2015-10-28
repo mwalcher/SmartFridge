@@ -1,6 +1,6 @@
 <section>
 	<div class="small-4 columns">
-		<h2>TIME</h2>
+		<h2 id="mainClock"></h2>
 		<p><?php echo date('l F d Y');?></p>
 	</div>
 	<div class="small-4 columns">
