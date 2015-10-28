@@ -13,6 +13,6 @@
 
   	<section class="row">
   		<h2 class="small-4 columns">Date</h2>
-  		<h2 class="small-4 text-center columns">11:00 A.M</h2>
+  		<h2 id="clock" class="small-4 text-center columns"></h2>
   		<h2 class="small-4 text-right  columns">Icons</h2>
   	</section>
