@@ -14,7 +14,7 @@
   <body>
   	<h1 class="hidden">Smart Fridge</h1>
 
-  	<section class="row" id="mainHead">
+  	<header class="row" id="mainHead">
   		<h2 class="small-4 columns"><?php echo date('D M d');?></h2>
   		<h2 id="clock" class="small-4 text-center columns"></h2>
   		<div class="small-4 columns">
@@ -25,4 +25,4 @@
   				<li><img class="headerIcon" src="<?php echo base_url().'images/sync.png';?>"></li>		
   			</ul>	
   		</div>
-  	</section>
+  	</header>
