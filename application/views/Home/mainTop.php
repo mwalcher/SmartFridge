@@ -1,7 +1,7 @@
 <section>
 	<div class="small-4 columns">
 		<h2>TIME</h2>
-		<p>date</p>
+		<p><?php echo date('l F d Y');?></p>
 	</div>
 	<div class="small-4 columns">
 		<img id="logo" src="<?php echo base_url().'images/LG.png';?>">

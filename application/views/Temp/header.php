@@ -14,7 +14,7 @@
   	<h1 class="hidden">Smart Fridge</h1>
 
   	<section class="row" id="mainHead">
-  		<h2 class="small-4 columns">Date</h2>
+  		<h2 class="small-4 columns"><?php echo date('D M d');?></h2>
   		<h2 id="clock" class="small-4 text-center columns"></h2>
   		<div class="small-4 columns">
   			<ul class="small-block-grid-4 columns">
