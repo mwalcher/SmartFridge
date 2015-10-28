@@ -8,3 +8,4 @@
     <script src="js/vendor/modernizr.js"></script>
   </head>
   <body>
+  	<h1>Hello World</h1>
