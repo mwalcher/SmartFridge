@@ -1,1 +1,0 @@
-brightSetting.php

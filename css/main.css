@@ -1,3 +1,22 @@
 .hidden{
 	display: none;
 }
+body{
+	background: #e1e1e1;
+}
+h2{
+	font-family: 'Lato', sans-serif;
+}
+
+#mainHead{
+	height: 100px;
+}
+
+.headerIcon{
+	height: 40px;
+}
+
+#logo{
+	display: block;
+	margin: 0 auto;
+}

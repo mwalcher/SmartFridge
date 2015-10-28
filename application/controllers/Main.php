@@ -5,9 +5,13 @@ class Main extends CI_Controller {
 
 	public function index(){
 		$data['title'] = "Smart Fridge - Home";
+		$this->load->helper('date');
+		
+
 
 
 		$this->load->view('temp/header', $data);
+		$this->load->view('home/mainTop');
 		$this->load->view('temp/footer');
 	}
 }
