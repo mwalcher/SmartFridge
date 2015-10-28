@@ -1,19 +1,29 @@
 .hidden{
 	display: none;
 }
+
 body{
-	background: #e1e1e1;
+	color: #fff;
+	background: -webkit-radial-gradient(#333 2%, #222 90%); /* Safari 5.1-6.0 */
+	background: -o-radial-gradient(#333 2%, #222 90%); /* For Opera 11.6-12.0 */
+	background: -moz-radial-gradient(#333 2%, #222 90%); /* For Firefox 3.6-15 */
+	background: radial-gradient(#333 2%, #222 90%); /* Standard syntax */
 }
+
 h2{
+	color: #fff;
 	font-family: 'Lato', sans-serif;
 }
 
 #mainHead{
 	height: 100px;
+	max-width: 100%;
 }
 
 .headerIcon{
 	height: 40px;
+	float: right;
+	margin-top: 10px;
 }
 
 #logo{
