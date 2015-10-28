@@ -1,8 +1,10 @@
 (function(){
 
+  var time = document.querySelector("#clock");
+
   function init(){
-    timeDisplay = document.createTextNode ("");
-    document.getElementById("clock").appendChild(timeDisplay);
+    timeDisplay = "";
+    time.appendChild(timeDisplay);
   }
 
   function updateClock(){
@@ -29,10 +31,10 @@
     var currentTimeString = currentHours + ":" + currentMinutes + ":" + currentSeconds + " " + timeOfDay;
 
     // Update the time display
-    document.getElementById("clock").firstChild.nodeValue = currentTimeString;
+    time.innerHTML = currentTimeString;
   }
 
   updateClock();
-  setInterval('updateClock()',1000);
+  window.setInterval(updateClock,1000);
 
 })();
