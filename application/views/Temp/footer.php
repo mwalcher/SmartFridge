@@ -1,13 +1,13 @@
 <ul class="small-block-grid-9 columns">
-	<li>1</li>
-	<li>2</li>
-	<li>3</li>
-	<li>4</li>
-	<li>5</li>
-	<li>6</li>
-	<li>7</li>
-	<li>8</li>
-	<li>9</li>
+	<li><img src="<?php echo base_url().'images/nav_lock.png';?>"></li>
+	<li><img src="<?php echo base_url().'images/nav_home.png';?>"></li>
+	<li><img src="<?php echo base_url().'images/nav_food.png';?>"></li>
+	<li><img src="<?php echo base_url().'images/nav_grocery.png';?>"></li>
+	<li><img src="<?php echo base_url().'images/nav_recipe.png';?>"></li>
+	<li><img src="<?php echo base_url().'images/nav_note.png';?>"></li>
+	<li><img src="<?php echo base_url().'images/nav_calc.png';?>"></li>
+	<li><img src="<?php echo base_url().'images/nav_cal.png';?>"></li>
+	<li><img src="<?php echo base_url().'images/nav_settings.png';?>"></li>
 	
 </ul>
 <script src="<?php echo base_url().'js/vendor/jquery.js';?>"></script>
