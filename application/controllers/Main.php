@@ -21,6 +21,9 @@ class Main extends CI_Controller {
 
 		$this->load->view('temp/header', $data);
 		$this->load->view('home/mainTop');
+		$this->load->view('Home/tempSetting');
+		$this->load->view('Home/dispenser');
+		$this->load->view('Home/brightSetting');
 		$this->load->view('temp/footer');
 	}
 

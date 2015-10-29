@@ -1,4 +1,4 @@
-<section>
+<section class="row">
 	<div class="small-4 columns">
 		<h2 id="mainClock"></h2>
 		<p><?php echo date('l F d Y');?></p>
