@@ -13,12 +13,12 @@
 		
 		if(c){
 			cTemp = curTemp.innerHTML.substring(0, curTemp.innerHTML.length - 2);
-			fTemp = (cTemp * 1.8) + 32;
+			fTemp = Math.floor((cTemp * 1.8) + 32);
 			curTemp.innerHTML = fTemp + "&deg;F";
 			c = false;
 		}else{
 			fTemp = curTemp.innerHTML.substring(0, curTemp.innerHTML.length - 2);
-			cTemp = (fTemp - 32) / 1.8;
+			cTemp = Math.floor((fTemp - 32) / 1.8);
 			curTemp.innerHTML = cTemp + "&deg;C";
 			c = true;
 		}
