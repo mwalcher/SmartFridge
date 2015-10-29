@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="<?php echo base_url().'css/foundation.css'?>">
 	<link rel="stylesheet" href="<?php echo base_url().'css/main.css';?>">
     <script src="<?php echo base_url().'js/vendor/modernizr.js';?>"></script>
-    <script src="http://api.openweathermap.org/data/2.5/weather?q=London,CA&appid=bd82977b86bf27fb59a04b61b657fb6f"></script>
+    
   </head>
   <body>
   	<h1 class="hidden">Smart Fridge</h1>

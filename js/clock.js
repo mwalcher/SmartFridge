@@ -2,6 +2,7 @@
 
   var time = document.querySelector("#clock");
   var maintime = document.querySelector("#mainClock");
+  var t = true;
 
   function updateClock(){
     var currentTime = new Date();
@@ -14,25 +15,40 @@
     currentMinutes = (currentMinutes < 10 ? "0" : "") + currentMinutes;
     currentSeconds = (currentSeconds < 10 ? "0" : "") + currentSeconds;
 
-    // Choose either "AM" or "PM" as appropriate
-    var timeOfDay = (currentHours < 12) ? "AM" : "PM";
+    var currentTimeString;
+    var currentTimeStringMain;
 
-    // Convert the hours component to 12-hour format if needed
-    currentHours = (currentHours > 12) ? currentHours - 12 : currentHours;
-
-    // Convert an hours component of "0" to "12"
-    currentHours = (currentHours === 0) ? 12 : currentHours;
-
-    // Compose the string for display
-    var currentTimeString = currentHours + ":" + currentMinutes + ":" + currentSeconds + " " + timeOfDay;
-    var currentTimeStringMain = currentHours + ":" + currentMinutes + " " + timeOfDay;
+    if(t){
+      // Choose either "AM" or "PM" as appropriate
+      var timeOfDay = (currentHours < 12) ? "AM" : "PM";
+      // Convert the hours component to 12-hour format
+      currentHours = (currentHours > 12) ? currentHours - 12 : currentHours;
+      // Convert an hours component of "0" to "12"
+      currentHours = (currentHours === 0) ? 12 : currentHours;
+      // Compose the string for display
+      currentTimeString = currentHours + ":" + currentMinutes + ":" + currentSeconds + " " + timeOfDay;
+      currentTimeStringMain = currentHours + ":" + currentMinutes + " " + timeOfDay;
+    }else{
+      // Compose the string for display
+      currentTimeString = currentHours + ":" + currentMinutes + ":" + currentSeconds;
+      currentTimeStringMain = currentHours + ":" + currentMinutes;
+    }
 
     // Update the time display
     time.innerHTML = currentTimeString;
     maintime.innerHTML = currentTimeStringMain;
   }
 
+  function switchTime(){
+    if(t){
+      t = false;
+    }else{
+      t = true;
+    }
+  }
+
   updateClock();
   window.setInterval(updateClock,1000);
+  maintime.addEventListener("click", switchTime, false);
 
 })();
