@@ -44,6 +44,12 @@ h2{
 	margin: 0 auto;
 	display: block;
 }
+
+.navIcons li img{
+	margin: 0 auto;
+	display: block;
+}
+
 footer{
 	bottom: 0;
 }

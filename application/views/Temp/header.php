@@ -20,9 +20,10 @@
   		<div class="small-4 columns">
   			<ul class="small-block-grid-4 columns">
   				<li><img class="headerIcon" src="<?php echo base_url().'images/alert.png';?>"></li>
-  				<li><img class="headerIcon" src="<?php echo base_url().'images/lock.png';?>"></li>
+  				<li><img class="headerIcon" src="<?php echo base_url().'images/sync.png';?>"></li>
   				<li><img class="headerIcon" src="<?php echo base_url().'images/wifi.png';?>"></li>
-  				<li><img class="headerIcon" src="<?php echo base_url().'images/sync.png';?>"></li>		
+          <li><img class="headerIcon" src="<?php echo base_url().'images/lock.png';?>"></li>
+  						
   			</ul>	
   		</div>
   	</header>
