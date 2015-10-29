@@ -16,6 +16,7 @@ class Main extends CI_Controller {
 		$iconStr = strtolower(str_replace(' ', '_',$icon));
 		$c = $temp-273.15;
 		$data['temp'] = $c;
+		$data['icon'] = $iconStr;
 		//echo $iconStr;
 
 		$this->load->view('temp/header', $data);
