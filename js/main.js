@@ -19,7 +19,8 @@
 		}else{
 			fTemp = curTemp.innerHTML.substring(0, curTemp.innerHTML.length - 2);
 			cTemp = (fTemp - 32) / 1.8;
-			curTemp.innerHTML = cTemp + "&deg;C";
+			var newCTemp = Math.floor(cTemp);
+			curTemp.innerHTML = newCTemp + "&deg;C";
 			c = true;
 		}
 	}
