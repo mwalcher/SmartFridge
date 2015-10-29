@@ -1,6 +1,9 @@
 .hidden{
 	display: none;
 }
+.row{
+	max-width: 100%;
+}
 
 body{
 	color: #fff;
@@ -14,23 +17,20 @@ h2{
 	color: #fff;
 	font-family: 'Lato', sans-serif;
 }
-.small-block-grid{
-	margin: 0;
-}
+
 
 #mainHead{
 	height: 100px;
 	
 }
-.row{
-	max-width: 100%;
-}
-
 .headerIcon{
 	height: 40px;
 	float: right;
 	margin-top: 10px;
 }
+
+
+
 
 #logo{
 	display: block;
@@ -39,4 +39,11 @@ h2{
 
 #weatherImg{
 	float: left;
+}
+.navIcons{
+	margin: 0 auto;
+	display: block;
+}
+footer{
+	bottom: 0;
 }
