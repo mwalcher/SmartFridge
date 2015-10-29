@@ -7,8 +7,9 @@
 		<img id="logo" src="<?php echo base_url().'images/LG.png';?>">
 	</div>
 	<div class="small-4 columns text-right">
-		<img src="<?php echo base_url().'images/'.$icon.'.png';?>">
+		<img id="weatherImg" src="<?php echo base_url().'images/'.$icon.'.png';?>">
 		<h2 id="temp"><?php echo $temp;?></h2>
+		<h2><?php echo $tempTitle;?></h2>
 	</div>
 	
 </section>

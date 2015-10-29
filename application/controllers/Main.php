@@ -12,11 +12,13 @@ class Main extends CI_Controller {
 		$json=file_get_contents($url);
 		$tempData=json_decode($json, true);
 		$temp = $tempData['main']['temp'];
+		$tempTitle = $tempData['weather'][0]['main'];
 		$icon = $tempData['weather'][0]['main'];
 		$iconStr = strtolower(str_replace(' ', '_',$icon));
 		$c = $temp-273.15;
 		$data['temp'] = $c;
 		$data['icon'] = $iconStr;
+		$data['tempTitle'] = $tempTitle;
 		//echo $iconStr;
 
 		$this->load->view('temp/header', $data);
