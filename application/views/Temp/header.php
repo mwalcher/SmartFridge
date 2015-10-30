@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="<?php echo base_url().'css/foundation.css'?>">
 	<link rel="stylesheet" href="<?php echo base_url().'css/main.css';?>">
     <script src="<?php echo base_url().'js/vendor/modernizr.js';?>"></script>
-    
+   <style type="text/css">
+  </style>
   </head>
   <body>
   	<h1 class="hidden">Smart Fridge</h1>

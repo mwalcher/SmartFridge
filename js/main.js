@@ -1,6 +1,11 @@
 (function(){
+	var styles = document.querySelector('style');
+	var brightness = document.querySelector('#brightness');
 	var curTemp =  document.querySelector('#temp');
 	var c = true;
+	var size = brightness.value;
+
+	styles.innerHTML = "input[type=range]::-moz-range-thumb{transform: scale("+ size +","+ size +");}";
 
 	function currentTemp(){
 		var newTemp = Math.floor(curTemp.innerHTML);
@@ -13,7 +18,7 @@
 		
 		if(c){
 			cTemp = curTemp.innerHTML.substring(0, curTemp.innerHTML.length - 2);
-			fTemp = Math.floor((cTemp * 1.8) + 32);
+			fTemp = (cTemp * 1.8) + 32;
 			curTemp.innerHTML = fTemp + "&deg;F";
 			c = false;
 		}else{
@@ -24,7 +29,14 @@
 		}
 	}
 
+	function scaleSun(){
+		size = brightness.value;
+		styles.innerHTML = "input[type=range]::-moz-range-thumb{transform: scale("+ size +","+ size +");}";
+		//console.log(size);
+	}
+
 	currentTemp();
 	curTemp.addEventListener("click", switchTemp, false);
+	brightness.addEventListener("input", scaleSun, false);
 
 })();

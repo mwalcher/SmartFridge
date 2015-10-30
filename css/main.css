@@ -7,45 +7,73 @@
 
 body{
 	color: #fff;
+	font-family: 'Lato', sans-serif;
 	background: -webkit-radial-gradient(#333 2%, #222 90%); /* Safari 5.1-6.0 */
 	background: -o-radial-gradient(#333 2%, #222 90%); /* For Opera 11.6-12.0 */
 	background: -moz-radial-gradient(#333 2%, #222 90%); /* For Firefox 3.6-15 */
 	background: radial-gradient(#333 2%, #222 90%); /* Standard syntax */
 }
 
-h2{
+h2, h3{
 	color: #fff;
 	font-family: 'Lato', sans-serif;
 }
 
-
 #mainHead{
-	height: 100px;
-	
+	padding: 5px 0;
+	margin-bottom: 10px;
+	background-color: rgba(35,35,35,0.5);
 }
+
+#mainHead h2:first-child {
+	padding-left: 35px;
+}
+
 .headerIcon{
 	height: 40px;
 	float: right;
 	margin-top: 10px;
 }
 
-
 [class*="block-grid-"] > li{
 	padding-bottom: 0;
 }
 
-#logo{
-	display: block;
-	margin: 0 auto;
+#temp, #mainClock, .upArrow, .downArrow, #fridge, #freezer {
+	cursor: pointer;
 }
 
-#weatherImg{
+#dateTime {
+	padding-left: 20px;
+}
+
+#dateTime h2 {
+	margin-top: 40px;
+	font-size: 4em;
+	line-height: 0.6em;
+}
+
+#dateTime p {
+	font-size: 1.4em;
+}
+
+#logo{
+	display: block;
+	margin: 10px auto;
+}
+
+#weather {
+	margin-top: 10px;
+	padding-right: 20px;
+}
+
+#weather img{
 	float: left;
 }
+
 .navIcons{
 	margin: 0 auto;
 	display: block;
-
 }
 
 .navIcons li img{
@@ -55,6 +83,97 @@ h2{
 
 #mainMiddle{
 	height: 400px;
-	background: white;
 	margin: 12px auto;
+}
+
+#tempSetting, #dispenser, #brightSetting {
+	padding: 0;
+}
+
+#tempSetting .row, #brightSetting .row {
+	margin: 30px 0;
+	height: 190px;
+}
+
+#tempSetting h3, #brightSetting h3 {
+	text-align: center;
+}
+
+.borderR {
+	border-right: 1px solid #fff;
+}
+
+.temp {
+	font-size: 3em;
+	text-align: center;
+}
+
+#tempSetting button {
+	width: 80%;
+	display: block;
+	margin: 10px auto 0;
+	text-transform: uppercase;
+	font-family: 'Lato', sans-serif;
+	background-color: #C01B55;
+}
+
+#tempSetting button:active {
+	background-color: #9B0D43;
+}
+
+#dispenser {
+	background-color: rgba(35,35,35,0.5);
+	height: 100%;
+}
+
+#dispenser h2 {
+	text-align: center;
+	text-transform: uppercase;
+	margin: 0;
+	padding-top: 10px;
+	height: 75px;
+}
+
+#brightSetting h3 {
+	margin-bottom: 30px;
+}
+
+input[type=range]{
+	display: block;
+	margin: 0 auto;
+    height: 100px;
+}
+
+input[type=range]::-moz-range-track {
+    width: 5px;
+    height: 100px;
+    background: #ddd;
+    border: none;
+    border-radius: 3px;
+}
+
+input[type=range]::-moz-range-thumb {
+    border: none;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-image: url('../images/sun.svg');
+	background-size: 30px 30px;
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-color: transparent;
+	-moz-transform-origin: center bottom;
+	transform-origin: center bottom;
+}
+
+input[type=range]:-moz-focusring{
+    outline: none;
+}
+
+input[type=range]::-moz-focus-outer {
+    border: 0;
+}
+
+input[type=range]:focus::-moz-range-track {
+    background: #ccc;
 }
