@@ -1,9 +1,18 @@
 (function(){
 	var styles = document.querySelector('style');
+	var fridge = document.querySelector('#fridge');
+	var fridgeTemp = document.querySelector('#fridgeDeg');
+	var freezer = document.querySelector('#freezer');
+	var freezerTemp = document.querySelector('#freezerDeg');
+	var setButton = document.querySelector('#setTemp');
+	var tUp = document.querySelector('#tempUp');
+	var tDown = document.querySelector('#tempDown');
 	var waterD = document.querySelector('#dispenserW');
 	var crushD = document.querySelector('#dispenserC');
 	var iceD = document.querySelector('#dispenserI');
 	var brightness = document.querySelector('#brightness');
+	var bUp = document.querySelector('#brightUp');
+	var bDown = document.querySelector('#brightDown');
 	var curTemp =  document.querySelector('#temp');
 	var c = true;
 	var size = brightness.value;
@@ -38,13 +47,95 @@
 		//console.log(size);
 	}
 
+	function adjustBrightness(){
+		var adjBright;
+		if(this.id === "brightUp"){
+			adjBright = Number(brightness.value) + 0.1;
+			if(adjBright >= 2){
+				adjBright = 2;
+			}
+			brightness.value = adjBright;
+			scaleSun();
+		}else if(this.id === "brightDown"){
+			adjBright = Number(brightness.value) - 0.1;
+			if(adjBright <= 1){
+				adjBright = 1;
+			}
+			brightness.value = adjBright;
+			scaleSun();
+		}
+	}
+
+	function changeTemp(){
+		if(this.id === "fridge"){
+			freezer.style.width = 0;
+			freezer.style.display = "none";
+			fridge.style.width = "100%";
+			fridge.style.border = "none";
+		}else if(this.id === "freezer"){
+			fridge.style.width = 0;
+			fridge.style.display = "none";
+			freezer.style.width = "100%";
+		}
+	}
+
+	function adjustTemp(){
+		var adjTemp;
+
+		if(fridge.style.display === "block" && freezer.style.display === "block"){
+			alert("Please select either the Fridge or the Freezer before you adjust the temperature.");
+		}else{
+			if(fridge.style.display === "block"){
+				if(this.id === "tempUp"){
+					adjTemp = parseInt(fridgeTemp.innerHTML,10);
+					adjTemp++;
+					fridgeTemp.innerHTML = adjTemp;
+				}else if(this.id === "tempDown"){
+					adjTemp = parseInt(fridgeTemp.innerHTML,10);
+					adjTemp--;
+					fridgeTemp.innerHTML = adjTemp;
+				}
+			}else if(freezer.style.display === "block"){
+				if(this.id === "tempUp"){
+					adjTemp = parseInt(freezerTemp.innerHTML,10);
+					adjTemp++;
+					freezerTemp.innerHTML = adjTemp;
+				}else if(this.id === "tempDown"){
+					adjTemp = parseInt(freezerTemp.innerHTML,10);
+					adjTemp--;
+					freezerTemp.innerHTML = adjTemp;
+				}
+			}
+		}
+	}
+
+	function setTemp(){
+		if(freezer.style.display === "none"){
+			fridge.style.width = "50%";
+			fridge.style.borderRight = "1px solid #fff";
+			setTimeout(delayFreezer, 1000);
+		}else if(fridge.style.display === "none"){
+			freezer.style.width = "50%";
+			setTimeout(delayFridge, 1000);
+		}
+	}
+
+	function delayFreezer(){
+		freezer.style.display = "block";
+		freezer.style.width = "50%";
+	}
+
+	function delayFridge(){
+		fridge.style.display = "block";
+		fridge.style.width = "50%";
+	}
+
 	function activeDispenser(){
 		if(!this.classList.contains("active")){
 			waterD.classList.remove("active");
 			crushD.classList.remove("active");
 			iceD.classList.remove("active");
 			this.classList.add("active");
-			console.log(this.src);
 		}
 	}
 
@@ -54,5 +145,12 @@
 	waterD.addEventListener("click", activeDispenser, false);
 	crushD.addEventListener("click", activeDispenser, false);
 	iceD.addEventListener("click", activeDispenser, false);
+	fridge.addEventListener("click", changeTemp, false);
+	freezer.addEventListener("click", changeTemp, false);
+	setButton.addEventListener("click", setTemp, false);
+	tUp.addEventListener("click", adjustTemp, false);
+	tDown.addEventListener("click", adjustTemp, false);
+	bUp.addEventListener("click", adjustBrightness, false);
+	bDown.addEventListener("click", adjustBrightness, false);
 
 })();

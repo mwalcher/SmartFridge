@@ -98,8 +98,12 @@ h2, h3{
 	text-align: center;
 }
 
-.borderR {
+#fridge {
 	border-right: 1px solid #fff;
+}
+
+#fridge, #freezer {
+	transition: width 1s;
 }
 
 .temp {
@@ -143,17 +147,20 @@ h2, h3{
 
 #dispenserW.active {
 	padding-left: 304px;
-	background-image: url('../images/dispenser_water_active.png');
+	background-image: url('../images/dispenser_water_active@2x.png');
+	background-size: 304px 78px;
 }
 
 #dispenserC.active {
 	padding-left: 304px;
-	background-image: url('../images/dispenser_crushed_active.png');
+	background-image: url('../images/dispenser_crushed_active@2x.png');
+	background-size: 304px 78px;
 }
 
 #dispenserI.active {
 	padding-left: 304px;
-	background-image: url('../images/dispenser_ice_active.png');
+	background-image: url('../images/dispenser_ice_active@2x.png');
+	background-size: 304px 78px;
 }
 
 #dispenser img:active, #dispenser img.active {
@@ -172,12 +179,12 @@ h2, h3{
 input[type=range]{
 	display: block;
 	margin: 0 auto;
-    height: 100px;
+    height: 120px;
 }
 
 input[type=range]::-moz-range-track {
     width: 5px;
-    height: 100px;
+    height: 120px;
     background: #fff;
     border: none;
     border-radius: 3px;
