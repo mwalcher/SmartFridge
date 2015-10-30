@@ -1,23 +1,32 @@
-.hidden{
-	display: none;
-}
-.row{
-	max-width: 100%;
-}
+/* GLOBAL */
 
 body{
 	color: #fff;
 	font-family: 'Lato', sans-serif;
-	background: -webkit-radial-gradient(#333 2%, #222 90%); /* Safari 5.1-6.0 */
-	background: -o-radial-gradient(#333 2%, #222 90%); /* For Opera 11.6-12.0 */
-	background: -moz-radial-gradient(#333 2%, #222 90%); /* For Firefox 3.6-15 */
-	background: radial-gradient(#333 2%, #222 90%); /* Standard syntax */
+	background: -webkit-radial-gradient(#333 2%, #222 90%);
+	background: -o-radial-gradient(#333 2%, #222 90%);
+	background: -moz-radial-gradient(#333 2%, #222 90%);
+	background: radial-gradient(#333 2%, #222 90%);
+}
+
+.hidden{
+	display: none;
+}
+
+.row{
+	max-width: 100%;
 }
 
 h2, h3{
 	color: #fff;
 	font-family: 'Lato', sans-serif;
 }
+
+#temp, #mainClock, .upArrow, .downArrow, #fridge, #freezer, #dispenser img, .navIcons li img {
+	cursor: pointer;
+}
+
+/* HEADER */
 
 #mainHead{
 	padding: 5px 0;
@@ -39,9 +48,7 @@ h2, h3{
 	padding-bottom: 0;
 }
 
-#temp, #mainClock, .upArrow, .downArrow, #fridge, #freezer {
-	cursor: pointer;
-}
+/* HOME TOP BAR */
 
 #dateTime {
 	padding-left: 20px;
@@ -71,15 +78,7 @@ h2, h3{
 	float: left;
 }
 
-.navIcons{
-	margin: 0 auto;
-	display: block;
-}
-
-.navIcons li img{
-	margin: 0 auto;
-	display: block;
-}
+/* HOME SETTINGS */
 
 #mainMiddle{
 	height: 400px;
@@ -134,6 +133,38 @@ h2, h3{
 	height: 75px;
 }
 
+#dispenser img {
+	display: block;
+	margin: 25px auto;
+	width: 304px;
+	height: 78px;
+	padding-left: 0;
+}
+
+#dispenserW.active {
+	padding-left: 304px;
+	background-image: url('../images/dispenser_water_active.png');
+}
+
+#dispenserC.active {
+	padding-left: 304px;
+	background-image: url('../images/dispenser_crushed_active.png');
+}
+
+#dispenserI.active {
+	padding-left: 304px;
+	background-image: url('../images/dispenser_ice_active.png');
+}
+
+#dispenser img:active, #dispenser img.active {
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px #FFF;
+}
+
+#dispenser img:first-of-type {
+	margin-top: 30px;
+}
+
 #brightSetting h3 {
 	margin-bottom: 30px;
 }
@@ -147,7 +178,7 @@ input[type=range]{
 input[type=range]::-moz-range-track {
     width: 5px;
     height: 100px;
-    background: #ddd;
+    background: #fff;
     border: none;
     border-radius: 3px;
 }
@@ -175,5 +206,17 @@ input[type=range]::-moz-focus-outer {
 }
 
 input[type=range]:focus::-moz-range-track {
-    background: #ccc;
+    background: #DDD;
+}
+
+/* FOOTER */
+
+.navIcons{
+	margin: 0 auto;
+	display: block;
+}
+
+.navIcons li img{
+	margin: 0 auto;
+	display: block;
 }

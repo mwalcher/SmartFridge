@@ -1,5 +1,8 @@
 (function(){
 	var styles = document.querySelector('style');
+	var waterD = document.querySelector('#dispenserW');
+	var crushD = document.querySelector('#dispenserC');
+	var iceD = document.querySelector('#dispenserI');
 	var brightness = document.querySelector('#brightness');
 	var curTemp =  document.querySelector('#temp');
 	var c = true;
@@ -35,8 +38,21 @@
 		//console.log(size);
 	}
 
+	function activeDispenser(){
+		if(!this.classList.contains("active")){
+			waterD.classList.remove("active");
+			crushD.classList.remove("active");
+			iceD.classList.remove("active");
+			this.classList.add("active");
+			console.log(this.src);
+		}
+	}
+
 	currentTemp();
 	curTemp.addEventListener("click", switchTemp, false);
 	brightness.addEventListener("input", scaleSun, false);
+	waterD.addEventListener("click", activeDispenser, false);
+	crushD.addEventListener("click", activeDispenser, false);
+	iceD.addEventListener("click", activeDispenser, false);
 
 })();
