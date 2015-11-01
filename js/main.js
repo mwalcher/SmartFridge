@@ -1,5 +1,6 @@
 (function(){
 	var styles = document.querySelector('style');
+	var navIcons =  document.querySelectorAll('.navIcons a');
 	var fridge = document.querySelector('#fridge');
 	var fridgeTemp = document.querySelector('#fridgeDeg');
 	var freezer = document.querySelector('#freezer');
@@ -138,6 +139,17 @@
 			this.classList.add("active");
 		}
 	}
+
+	function activeFooter(){
+		for(i=0; i<navIcons.length; i++) {
+			navIcons[i].classList.remove("active");
+			this.classList.add("active");
+		}
+	}
+
+	[].forEach.call(navIcons, function(e) {
+		e.addEventListener("click", activeFooter, false);
+	});
 
 	currentTemp();
 	curTemp.addEventListener("click", switchTemp, false);
