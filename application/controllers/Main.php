@@ -19,7 +19,6 @@ class Main extends CI_Controller {
 		$data['temp'] = $c;
 		$data['icon'] = $iconStr;
 		$data['tempTitle'] = $tempTitle;
-		//echo $iconStr;
 
 		$this->load->view('temp/header', $data);
 		$this->load->view('home/mainTop');
