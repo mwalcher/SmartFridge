@@ -34,14 +34,19 @@ h2, h3{
 	background-color: rgba(35,35,35,0.5);
 }
 
+#mainHead h2 {
+	font-size: 1.5em;
+	margin: 0;
+}
+
 #mainHead h2:first-child {
 	padding-left: 35px;
 }
 
 .headerIcon{
-	height: 40px;
+	height: 20px;
 	float: right;
-	margin-top: 10px;
+	margin-top: 7px;
 }
 
 [class*="block-grid-"] > li{
