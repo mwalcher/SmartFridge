@@ -60,7 +60,7 @@ h2, h3{
 }
 
 #dateTime h2 {
-	margin-top: 40px;
+	margin-top: 30px;
 	font-size: 4em;
 	line-height: 0.6em;
 }
@@ -71,11 +71,10 @@ h2, h3{
 
 #logo{
 	display: block;
-	margin: 10px auto;
+	margin: 0 auto;
 }
 
 #weather {
-	margin-top: 10px;
 	padding-right: 20px;
 }
 
