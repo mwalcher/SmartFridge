@@ -20,12 +20,12 @@ class Main extends CI_Controller {
 		$data['icon'] = $iconStr;
 		$data['tempTitle'] = $tempTitle;
 
-		$this->load->view('temp/header', $data);
-		$this->load->view('home/mainTop');
+		$this->load->view('Temp/header', $data);
+		$this->load->view('Home/mainTop');
 		$this->load->view('Home/tempSetting');
 		$this->load->view('Home/dispenser');
 		$this->load->view('Home/brightSetting');
-		$this->load->view('temp/footer');
+		$this->load->view('Temp/footer');
 	}
 
 }

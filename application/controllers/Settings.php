@@ -7,11 +7,11 @@ class Settings extends CI_Controller {
 		$data['title'] = "Smart Fridge - Settings";
 		$data['page'] = "Settings";
 
-		$this->load->view('temp/header', $data);
-		$this->load->view('temp/title');
-		$this->load->view('settings/settingsNav');
-		$this->load->view('settings/settingsWifi');
-		$this->load->view('temp/footer');
+		$this->load->view('Temp/header', $data);
+		$this->load->view('Temp/title');
+		$this->load->view('Settings/settingsNav');
+		$this->load->view('Settings/settingsWifi');
+		$this->load->view('Temp/footer');
 	}
 
 }
