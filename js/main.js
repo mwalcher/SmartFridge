@@ -18,7 +18,7 @@
 	var c = true;
 	var size = brightness.value;
 
-	styles.innerHTML = "input[type=range]::-moz-range-thumb{transform: scale("+ size +","+ size +");}";
+	styles.innerHTML = "input[type=range]::-webkit-slider-thumb{transform: scale("+ size +","+ size +");}";
 
 	function currentTemp(){
 		var newTemp = Math.floor(curTemp.innerHTML);
@@ -44,7 +44,7 @@
 
 	function scaleSun(){
 		size = brightness.value;
-		styles.innerHTML = "input[type=range]::-moz-range-thumb{transform: scale("+ size +","+ size +");}";
+		styles.innerHTML = "input[type=range]::-webkit-slider-thumb{transform: scale("+ size +","+ size +");}";
 		//console.log(size);
 	}
 
