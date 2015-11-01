@@ -17,7 +17,11 @@
     
   <div id="lockScreen">
     <div id="passcode">
-      <input type="password">
+      <h2>Enter Password</h2>
+      <form>
+        <input type="password" required>
+        <input type="submit" value="Enter">
+      </form>
     </div>
   </div>
   

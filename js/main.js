@@ -1,5 +1,10 @@
 (function(){
 	var styles = document.querySelector('style');
+	var lockButton = document.querySelector('#lock');
+	var lockScreen = document.querySelector('#lockScreen');
+	var mainContent = document.querySelector('#container');
+	var passCode = document.querySelector('#passcode');
+	var passSubmit = document.querySelector('#passcode input[type="submit"]');
 	var navIcons =  document.querySelectorAll('.navIcons a');
 	var fridge = document.querySelector('#fridge');
 	var fridgeTemp = document.querySelector('#fridgeDeg');
@@ -151,6 +156,21 @@
 		e.addEventListener("click", activeFooter, false);
 	});
 
+	function openLockScreen(){
+		lockScreen.style.display = "block";
+	}
+
+	function openPasscode(){
+		mainContent.setAttribute("style", "-webkit-filter:blur(10px); -moz-filter:blur(10px); filter:blur(10px);");
+		passCode.style.display = "block";
+	}
+
+	function unlockScreen(){
+		mainContent.setAttribute("style", "-webkit-filter:blur(0); -moz-filter:blur(0); filter:blur(0);");
+		passCode.style.display = "none";
+		lockScreen.style.display = "none";
+	}
+
 	currentTemp();
 	curTemp.addEventListener("click", switchTemp, false);
 	brightness.addEventListener("input", scaleSun, false);
@@ -164,5 +184,8 @@
 	tDown.addEventListener("click", adjustTemp, false);
 	bUp.addEventListener("click", adjustBrightness, false);
 	bDown.addEventListener("click", adjustBrightness, false);
+	lockButton.addEventListener("click", openLockScreen, false);
+	lockScreen.addEventListener("click", openPasscode, false);
+	passSubmit.addEventListener("submit", unlockScreen, false);
 
 })();
