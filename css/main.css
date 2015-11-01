@@ -37,10 +37,8 @@ h2, h3{
 	z-index: 999;
 }
 
-@media screen and (max-width:1024px) {
-	#lockScreen{
-		height: 600px;
-	}
+#container{
+	height: 100%;
 }
 
 #passcode {
