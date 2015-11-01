@@ -14,7 +14,14 @@
   </head>
   <body>
   	<h1 class="hidden">Smart Fridge</h1>
-
+    
+  <div id="lockScreen">
+    <div id="passcode">
+      <input type="password">
+    </div>
+  </div>
+  
+  <div id="container">
   	<header class="row" id="mainHead">
   		<h2 class="small-4 columns"><?php echo date('D M d');?></h2>
   		<h2 id="clock" class="small-4 text-center columns"></h2>
