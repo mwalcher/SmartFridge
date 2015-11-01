@@ -15,5 +15,4 @@
 			<h2><?php echo $tempTitle;?></h2>
 		</div>
 	</div>
-	
 </section>
