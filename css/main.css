@@ -26,12 +26,19 @@ h2, h3{
 	text-transform: uppercase;
 }
 
-.subNav {
-	background-color: #ddd;
+.subNav, .subSection {
 	padding: 0;
 	height: 470px;
 	margin-bottom: 10px;
 	overflow: scroll;
+}
+
+.subNav {
+	background-color: #ddd;
+}
+
+.subSection {
+	background-color: rgba(35,35,35,0.5);
 }
 
 .subNav h3 {

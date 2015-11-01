@@ -84,6 +84,7 @@
 			if(c){
 				cTemp = curTemp.innerHTML.substring(0, curTemp.innerHTML.length - 2);
 				fTemp = (cTemp * 1.8) + 32;
+				fTemp = fTemp.toFixed(1);
 				curTemp.innerHTML = fTemp + "&deg;F";
 				c = false;
 			}else{
