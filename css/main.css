@@ -85,7 +85,7 @@ h2, h3{
 /* HOME SETTINGS */
 
 #mainMiddle{
-	height: 400px;
+	height: 380px;
 	margin: 12px auto;
 }
 
@@ -94,8 +94,8 @@ h2, h3{
 }
 
 #tempSetting .row, #brightSetting .row {
-	margin: 30px 0;
-	height: 190px;
+	margin: 25px 0;
+	height: 180px;
 }
 
 #tempSetting h3, #brightSetting h3 {
@@ -113,6 +113,7 @@ h2, h3{
 .temp {
 	font-size: 3em;
 	text-align: center;
+	margin-bottom: 0;
 }
 
 #tempSetting button {
@@ -143,7 +144,7 @@ h2, h3{
 
 #dispenser img {
 	display: block;
-	margin: 25px auto;
+	margin: 20px auto;
 	width: 304px;
 	height: 78px;
 	padding-left: 0;
@@ -170,10 +171,6 @@ h2, h3{
 #dispenser img:active, #dispenser img.active {
 	border-radius: 10px;
 	box-shadow: 0px 0px 10px #FFF;
-}
-
-#dispenser img:first-of-type {
-	margin-top: 30px;
 }
 
 #brightSetting h3 {
