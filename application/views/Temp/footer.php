@@ -1,14 +1,14 @@
 <footer>
 	<ul class="small-block-grid-9 columns navIcons">
-		<li><img src="<?php echo base_url().'images/nav_lock.png';?>"></li>
-		<li><img src="<?php echo base_url().'images/nav_home.png';?>"></li>
-		<li><img src="<?php echo base_url().'images/nav_food.png';?>"></li>
-		<li><img src="<?php echo base_url().'images/nav_grocery.png';?>"></li>
-		<li><img src="<?php echo base_url().'images/nav_recipe.png';?>"></li>
-		<li><img src="<?php echo base_url().'images/nav_note.png';?>"></li>
-		<li><img src="<?php echo base_url().'images/nav_calc.png';?>"></li>
-		<li><img src="<?php echo base_url().'images/nav_cal.png';?>"></li>
-		<li><img src="<?php echo base_url().'images/nav_settings.png';?>"></li>
+		<li><a href="#"><img src="<?php echo base_url().'images/nav_lock.png';?>"></a></li>
+		<li><a href="#"><img src="<?php echo base_url().'images/nav_home.png';?>"></a></li>
+		<li><a href="#"><img src="<?php echo base_url().'images/nav_food.png';?>"></a></li>
+		<li><a href="#"><img src="<?php echo base_url().'images/nav_grocery.png';?>"></a></li>
+		<li><a href="#"><img src="<?php echo base_url().'images/nav_recipe.png';?>"></a></li>
+		<li><a href="#"><img src="<?php echo base_url().'images/nav_note.png';?>"></a></li>
+		<li><a href="#"><img src="<?php echo base_url().'images/nav_calc.png';?>"></a></li>
+		<li><a href="#"><img src="<?php echo base_url().'images/nav_cal.png';?>"></a></li>
+		<li><a href="#"><img src="<?php echo base_url().'images/nav_settings.png';?>"></a></li>
 	</ul>
 </footer>
 <script src="<?php echo base_url().'js/vendor/jquery.js';?>"></script>
