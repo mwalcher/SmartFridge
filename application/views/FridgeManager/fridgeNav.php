@@ -3,50 +3,50 @@
 	<div class="small-4 columns subNav">
 		<a href="#" class="row">
 			<div class="small-2 columns">
-				<img src="../images/subNav_wifi.png">
+				<img src="../images/subNav_produce.png">
 			</div>
 			<div class="small-10 columns">
-				<h3>Wifi</h3>
+				<h3>Produce</h3>
 			</div>
 		</a>
 		<a href="#" class="row">
 			<div class="small-2 columns">
-				<img src="../images/subNav_pass.png">
+				<img src="../images/subNav_meat.png">
 			</div>
 			<div class="small-10 columns">
-				<h3>Password</h3>
+				<h3>Meat &amp; Seafood</h3>
 			</div>
 		</a>
 		<a href="#" class="row">
 			<div class="small-2 columns">
-				<img src="../images/subNav_alert.png">
+				<img src="../images/subNav_dairy.png">
 			</div>
 			<div class="small-10 columns">
-				<h3>Alerts</h3>
+				<h3>Dairy</h3>
 			</div>
 		</a>
 		<a href="#" class="row">
 			<div class="small-2 columns">
-				<img src="../images/subNav_guide.png">
+				<img src="../images/subNav_natural.png">
 			</div>
 			<div class="small-10 columns">
-				<h3>User Guide</h3>
+				<h3>Natural Foods</h3>
 			</div>
 		</a>
 		<a href="#" class="row">
 			<div class="small-2 columns">
-				<img src="../images/subNav_contact.png">
+				<img src="../images/subNav_drinks.png">
 			</div>
 			<div class="small-10 columns">
-				<h3>Contact</h3>
+				<h3>Drinks</h3>
 			</div>
 		</a>
 		<a href="#" class="row">
 			<div class="small-2 columns">
-				<img src="../images/subNav_sync.png">
+				<img src="../images/subNav_frozen.png">
 			</div>
 			<div class="small-10 columns">
-				<h3>Sync</h3>
+				<h3>Frozen</h3>
 			</div>
 		</a>
 	</div>

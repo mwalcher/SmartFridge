@@ -1,5 +1,5 @@
 <section class="row">
-	<h2 class="hidden">Settings Navigation</h2>
+	<h2 class="hidden"><?php echo $page; ?> Navigation</h2>
 	<div class="small-4 columns subNav">
 		<a href="#" class="row">
 			<div class="small-2 columns">
