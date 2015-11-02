@@ -30,7 +30,8 @@ h2, h3{
 	padding: 0;
 	height: 470px;
 	margin-bottom: 10px;
-	overflow: scroll;
+	overflow-x: hidden;
+	overflow-y: scroll;
 }
 
 .subNav {
@@ -41,12 +42,24 @@ h2, h3{
 	background-color: rgba(35,35,35,0.5);
 }
 
-.subNav h3 {
+.subNav a {
+	display: block;
 	margin: 0;
 	padding: 10px;
-	color: #222;
 	background-color: #bbb;
 	border-bottom: 1px solid #999;
+}
+
+.subNav img {
+	min-width: 40px;
+}
+
+.subNav h3 {
+	color: #222;
+	font-size: 2em;
+	line-height: 0.8em;
+	margin: 0;
+	padding-top: 5px;
 }
 
 #temp, #mainClock, .upArrow, .downArrow, #fridge, #freezer, #dispenser img, .navIcons li img {
@@ -288,6 +301,97 @@ input[type="range"]::-webkit-slider-thumb {
 
 input[type=range]:focus {
     outline: none;
+}
+
+/* SETTINGS */
+
+.settings {
+	background-color: #bbb;
+	border-bottom: 1px solid #999;
+}
+
+.settings p {
+	color: #222;
+	font-size: 1.5em;
+	margin: 0;
+	padding: 10px;
+}
+
+.settings img {
+	min-width: 40px;
+	max-width: 40px;
+	margin: 10px 4px 0;
+}
+
+#currentConnect {
+	display: none;
+}
+
+#searchConnect .row {
+	border-bottom: 1px solid #999;
+}
+
+#searchConnect h3 {
+	margin-top: 15px;
+	text-align: center;
+}
+
+.switch {
+	margin: 10px 0 2px;
+}
+
+.cmn-toggle {
+  position: absolute;
+  margin-left: -9999px;
+  visibility: hidden;
+}
+.cmn-toggle + label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  user-select: none;
+}
+
+input.cmn-toggle-round + label {
+  padding: 2px;
+  width: 80px;
+  height: 40px;
+  background-color: #dddddd;
+  border-radius: 60px;
+}
+input.cmn-toggle-round + label:before,
+input.cmn-toggle-round + label:after {
+  display: block;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  bottom: 1px;
+  content: "";
+}
+input.cmn-toggle-round + label:before {
+  right: 1px;
+  background-color: #f1f1f1;
+  border-radius: 60px;
+  transition: background 0.4s;
+}
+input.cmn-toggle-round + label:after {
+  width: 38px;
+  height: 38px;
+  background-color: #fff;
+  border-radius: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  transition: margin 0.4s;
+}
+input.cmn-toggle-round:checked + label:before {
+  background-color: #C01B55;
+}
+input.cmn-toggle-round:checked + label:after {
+  margin-left: 8px;
+}
+
+.switch input:checked + label {
+	background-color: #999;
 }
 
 /* FOOTER */

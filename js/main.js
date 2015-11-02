@@ -19,8 +19,28 @@
 	var brightness = document.querySelector('#brightness');
 	var bUp = document.querySelector('#brightUp');
 	var bDown = document.querySelector('#brightDown');
-	var curTemp =  document.querySelector('#temp');
+	var curTemp = document.querySelector('#temp');
 	var c = true;
+	var wifi = document.querySelector("#cmn-toggle-1");
+	var connection = document.querySelector("#connection");
+	var searchCon = document.querySelector("#searchConnect");
+	var currentCon = document.querySelector("#currentConnect");
+
+	if(wifi){
+		function wifiConnect(){
+			if(wifi.checked){
+				connection.innerHTML = "Connected";
+				searchCon.style.display = "none";
+				currentCon.style.display = "block";
+			}else{
+				connection.innerHTML = "Not Connected";
+				currentCon.style.display = "none";
+				searchCon.style.display = "block";
+			}
+		}
+		wifiConnect();
+		wifi.addEventListener("click", wifiConnect, false);
+	}
 
 	function openLockScreen(){
 		lockScreen.style.display = "block";
