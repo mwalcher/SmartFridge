@@ -1,14 +1,14 @@
 <footer>
 	<ul class="small-block-grid-9 columns navIcons">
 		<li id="lock"><img src="<?php echo base_url().'images/nav_lock.png';?>"></li>
-		<li><a href="<?php echo base_url(); ?>" class="active"><img src="<?php echo base_url().'images/nav_home.png';?>"></a></li>
-		<li><a href="#"><img src="<?php echo base_url().'images/nav_food.png';?>"></a></li>
-		<li><a href="#"><img src="<?php echo base_url().'images/nav_grocery.png';?>"></a></li>
-		<li><a href="#"><img src="<?php echo base_url().'images/nav_recipe.png';?>"></a></li>
-		<li><a href="#"><img src="<?php echo base_url().'images/nav_note.png';?>"></a></li>
-		<li><a href="#"><img src="<?php echo base_url().'images/nav_calc.png';?>"></a></li>
-		<li><a href="#"><img src="<?php echo base_url().'images/nav_cal.png';?>"></a></li>
-		<li><a href="<?php echo base_url().'index.php/Settings'; ?>"><img src="<?php echo base_url().'images/nav_settings.png';?>"></a></li>
+		<li><a href="<?php echo base_url(); ?>"><img src="<?php echo base_url().'images/nav_home.png';?>" alt="Home"></a></li>
+		<li><a href="#"><img src="<?php echo base_url().'images/nav_food.png';?>" alt="Food Manager"></a></li>
+		<li><a href="#"><img src="<?php echo base_url().'images/nav_grocery.png';?>" alt="Grocery List"></a></li>
+		<li><a href="#"><img src="<?php echo base_url().'images/nav_recipe.png';?>" alt="Recipe"></a></li>
+		<li><a href="#"><img src="<?php echo base_url().'images/nav_note.png';?>" alt="Notepad"></a></li>
+		<li><a href="#"><img src="<?php echo base_url().'images/nav_calc.png';?>" alt="Unit Converter"></a></li>
+		<li><a href="#"><img src="<?php echo base_url().'images/nav_cal.png';?>" alt="Calendar"></a></li>
+		<li><a href="<?php echo base_url().'index.php/Settings'; ?>"><img src="<?php echo base_url().'images/nav_settings.png';?>" alt="Settings"></a></li>
 	</ul>
 </footer>
 </div> <!-- End Container -->

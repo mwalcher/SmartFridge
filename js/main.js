@@ -207,16 +207,23 @@
 	}
 
 	function activeFooter(){
-		for(i=0; i<navIcons.length; i++) {
-			navIcons[i].classList.remove("active");
-			this.classList.add("active");
+		var section = document.querySelector("#sectionTitle");
+		if(section){
+			for(i=0; i<navIcons.length; i++) {
+				if(navIcons[i].querySelector("img").alt === section.innerHTML){
+					navIcons[i].classList.add("active");
+				}
+			}
+		}else{
+			for(i=0; i<navIcons.length; i++) {
+				if(navIcons[i].querySelector("img").alt === "Home"){
+					navIcons[i].classList.add("active");
+				}
+			}
 		}
 	}
 
-	[].forEach.call(navIcons, function(e) {
-		e.addEventListener("click", activeFooter, false);
-	});
-
+	activeFooter();
 	lockButton.addEventListener("click", openLockScreen, false);
 	lockScreen.addEventListener("click", openPasscode, false);
 	passSubmit.addEventListener("submit", unlockScreen, false);
