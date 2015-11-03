@@ -339,6 +339,30 @@ input[type=range]:focus {
 	font-size: 0.8em;
 }
 
+/* UNIT CONVERTER */
+
+.converter {
+	margin: 25px 0;
+}
+
+.converter .columns {
+	padding: 0;
+}
+
+.converter input, .converter select {
+	margin: 0;
+	border: none;
+	background-color: #bbb;
+	font-size: 1.5em;
+	height: 60px;
+}
+
+#equals {
+	display: block;
+	margin: 25px auto;
+	max-width: 100px;
+}
+
 /* SETTINGS */
 
 .settings {

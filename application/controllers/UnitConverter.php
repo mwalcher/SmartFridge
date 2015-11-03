@@ -10,7 +10,7 @@ class UnitConverter extends CI_Controller {
 		$this->load->view('Temp/header', $data);
 		$this->load->view('Temp/title');
 		$this->load->view('UnitConvert/unitConvertNav');
-		$this->load->view('Settings/settingsWifi');
+		$this->load->view('UnitConvert/unitConvertMass');
 		$this->load->view('Temp/footer');
 	}
 
