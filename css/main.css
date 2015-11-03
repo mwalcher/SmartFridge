@@ -312,6 +312,7 @@ input[type=range]:focus {
 
 .foodList li {
 	padding: 10px;
+	cursor: pointer;
 }
 
 .foodList li .foodItem {
@@ -328,7 +329,7 @@ input[type=range]:focus {
 	padding-top: 15px;
 }
 
-.foodInfo, .recipeInfo {
+.foodInfo, .groceryCat, .recipeInfo {
 	position: absolute;
 	bottom: 0;
 	padding: 10px;
@@ -338,6 +339,26 @@ input[type=range]:focus {
 	color: #222;
 	margin: 0;
 	font-size: 0.8em;
+}
+
+/* GROCERIES */
+
+.groceryCat {
+	width: 100%;
+}
+
+.groceryCat img {
+	display: block;
+	margin: 0 auto;
+	max-height: 90px;
+}
+
+.groceryCat p {
+	color: #222;
+	margin: 0;
+	font-size: 1.1em;
+	text-align: center;
+	padding-top: 20px;
 }
 
 /* RECIPES */

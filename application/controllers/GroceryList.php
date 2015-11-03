@@ -10,7 +10,7 @@ class GroceryList extends CI_Controller {
 		$this->load->view('Temp/header', $data);
 		$this->load->view('Temp/title');
 		$this->load->view('Groceries/groceriesNav');
-		$this->load->view('Settings/settingsWifi');
+		$this->load->view('Groceries/groceriesList');
 		$this->load->view('Temp/footer');
 	}
 

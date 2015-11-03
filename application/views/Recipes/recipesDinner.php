@@ -38,7 +38,7 @@
 			<div class="foodItem">
 				<img src="../images/recipe5thumb.jpg">
 				<div class="recipeInfo">
-				<p>Trout Salad</p>
+				<p>Lime Sriracha Salad</p>
 				</div>
 			</div>
 			</li>
