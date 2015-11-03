@@ -4,49 +4,49 @@
 		<ul class="small-block-grid-3 foodList">
 			<li>
 			<div class="foodItem">
-				<img src="../images/food_1.png">
-				<div class="foodInfo">
-				<p>Apples<br>Exp: Nov. 4th 2015<br>Quantity: 4</p>
+				<img src="../images/recipe1thumb.jpg">
+				<div class="recipeInfo">
+				<p>Baked Risotto</p>
 				</div>
 			</div>
 			</li>
 			<li>
 			<div class="foodItem">
-				<img src="../images/food_2.png">
-				<div class="foodInfo">
-				<p>Peaches<br>Exp: Nov. 4th 2015<br>Quantity: 2</p>
+				<img src="../images/recipe2thumb.jpg">
+				<div class="recipeInfo">
+				<p>Roasted Tomato Soup</p>
 				</div>
 			</div>
 			</li>
 			<li>
 			<div class="foodItem">
-				<img src="../images/food_3.png">
-				<div class="foodInfo">
-				<p>Carrots<br>Exp: Nov. 4th 2015<br>Quantity: 5</p>
+				<img src="../images/recipe3thumb.jpg">
+				<div class="recipeInfo">
+				<p>Spicy Lentil soup</p>
 				</div>
 			</div>
 			</li>
 			<li>
 			<div class="foodItem">
-				<img src="../images/food_4.png">
-				<div class="foodInfo">
-				<p>Bananas<br>Exp: Nov. 4th 2015<br>Quantity: 1</p>
+				<img src="../images/recipe4thumb.jpg">
+				<div class="recipeInfo">
+				<p>Cheesy Veggie Bake</p>
 				</div>
 			</div>
 			</li>
 			<li>
 			<div class="foodItem">
-				<img src="../images/food_5.png">
-				<div class="foodInfo">
-				<p>Grapes<br>Exp: Nov. 4th 2015<br>Quantity: 1</p>
+				<img src="../images/recipe5thumb.jpg">
+				<div class="recipeInfo">
+				<p>Trout Salad</p>
 				</div>
 			</div>
 			</li>
 			<li>
 			<div class="foodItem">
-				<img src="../images/food_6.png">
-				<div class="foodInfo">
-				<p>Tomatos<br>Exp: Nov. 4th 2015<br>Quantity: 2</p>
+				<img src="../images/recipe6thumb.jpg">
+				<div class="recipeInfo">
+				<p>Vegetable Stir-fry</p>
 				</div>
 			</div>
 			</li>

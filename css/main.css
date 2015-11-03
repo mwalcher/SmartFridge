@@ -328,7 +328,7 @@ input[type=range]:focus {
 	padding-top: 15px;
 }
 
-.foodInfo {
+.foodInfo, .recipeInfo {
 	position: absolute;
 	bottom: 0;
 	padding: 10px;
@@ -368,6 +368,18 @@ input[type=range]:focus {
 
 .recSearch button:active {
 	background-color: #9B0D43;
+}
+
+.recipeInfo {
+	padding: 7px 0;
+	width: 100%;
+}
+
+.recipeInfo p {
+	color: #222;
+	margin: 0;
+	font-size: 0.9em;
+	text-align: center;
 }
 
 /* NOTEPAD */
