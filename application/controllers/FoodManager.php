@@ -10,7 +10,7 @@ class FoodManager extends CI_Controller {
 		$this->load->view('Temp/header', $data);
 		$this->load->view('Temp/title');
 		$this->load->view('FridgeManager/fridgeNav');
-		$this->load->view('Settings/settingsWifi');
+		$this->load->view('FridgeManager/fridgeProduce');
 		$this->load->view('Temp/footer');
 	}
 

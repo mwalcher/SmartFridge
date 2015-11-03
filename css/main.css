@@ -50,6 +50,10 @@ h2, h3{
 	border-bottom: 1px solid #999;
 }
 
+.subNav a.active {
+	background-color: #808080;
+}
+
 .subNav img {
 	min-width: 40px;
 }
@@ -301,6 +305,38 @@ input[type="range"]::-webkit-slider-thumb {
 
 input[type=range]:focus {
     outline: none;
+}
+
+/* FOOD MANAGER */
+
+.foodList li {
+	padding: 10px;
+}
+
+.foodList li .foodItem {
+	position: relative;
+	background-color: #ddd;
+	border-radius: 10px;
+	width: 150px;
+	height: 150px;
+}
+
+.foodItem img {
+	display: block;
+	margin: 0 auto;
+	padding-top: 15px;
+}
+
+.foodInfo {
+	position: absolute;
+	bottom: 0;
+	padding: 10px;
+}
+
+.foodInfo p {
+	color: #222;
+	margin: 0;
+	font-size: 0.8em;
 }
 
 /* SETTINGS */

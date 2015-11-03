@@ -16,10 +16,10 @@
 		</div>
 		<div id="currentConnect" class="small-6 small-centered columns settings">
 			<div class="row">
-				<div class="small-8 columns">
+				<div class="small-7 columns">
 					<p>Fanshawe Wifi</p>
 				</div>
-				<div class="small-4 columns">
+				<div class="small-5 columns">
 					<img src="../images/wifi.png">
 					<img src="../images/info.png">
 				</div>
@@ -29,19 +29,19 @@
 			<h3>Choose a Network</h3>
 			<div class="small-6 small-centered columns settings">
 				<div class="row">
-					<div class="small-8 columns">
+					<div class="small-7 columns">
 						<p>Fanshawe Wifi</p>
 					</div>
-					<div class="small-4 columns">
+					<div class="small-5 columns">
 						<img src="../images/wifi.png">
 						<img src="../images/info.png">
 					</div>
 				</div>
 				<div class="row">
-					<div class="small-8 columns">
+					<div class="small-7 columns">
 						<p>Cool Wifi</p>
 					</div>
-					<div class="small-4 columns">
+					<div class="small-5 columns">
 						<img src="../images/wifi.png">
 						<img src="../images/info.png">
 					</div>
