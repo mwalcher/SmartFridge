@@ -10,7 +10,7 @@ class Notepad extends CI_Controller {
 		$this->load->view('Temp/header', $data);
 		$this->load->view('Temp/title');
 		$this->load->view('NotePad/notepadNav');
-		$this->load->view('Settings/settingsWifi');
+		$this->load->view('NotePad/notepadAdd');
 		$this->load->view('Temp/footer');
 	}
 
