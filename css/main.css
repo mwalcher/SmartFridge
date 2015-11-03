@@ -48,6 +48,7 @@ h2, h3{
 	padding: 10px;
 	background-color: #bbb;
 	border-bottom: 1px solid #999;
+	height: 61px;
 }
 
 .subNav a.active {
@@ -339,7 +340,37 @@ input[type=range]:focus {
 	font-size: 0.8em;
 }
 
-/* Notepad */
+/* RECIPES */
+
+.recSearch .search {
+	padding: 15px;
+	border-bottom: 1px solid #fff;
+}
+
+.recSearch input {
+	margin: 0;
+}
+
+.recSearch .row {
+	margin: 0;
+	padding: 10px 25px;
+	background-color: #bbb;
+	border-bottom: 1px solid #fff;
+}
+
+.recSearch button {
+	display: block;
+	margin: 25px auto 0;
+	text-transform: uppercase;
+	font-family: 'Lato', sans-serif;
+	background-color: #C01B55;
+}
+
+.recSearch button:active {
+	background-color: #9B0D43;
+}
+
+/* NOTEPAD */
 
 .subSection.notepad {
 	background: url("../images/notepaper.png");

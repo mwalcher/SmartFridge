@@ -10,7 +10,7 @@ class Recipes extends CI_Controller {
 		$this->load->view('Temp/header', $data);
 		$this->load->view('Temp/title');
 		$this->load->view('Recipes/recipesNav');
-		$this->load->view('Settings/settingsWifi');
+		$this->load->view('Recipes/recipesDinner');
 		$this->load->view('Temp/footer');
 	}
 

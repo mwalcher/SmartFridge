@@ -3,7 +3,7 @@
 	<div class="small-4 columns subNav">
 		<a href="#" class="row active">
 			<div class="small-2 columns">
-				<img src="../images/subNav_wifi.png">
+				<img src="../images/subNav_add.png">
 			</div>
 			<div class="small-10 columns">
 				<h3>New List</h3>
@@ -11,7 +11,6 @@
 		</a>
 		<a href="#" class="row">
 			<div class="small-2 columns">
-				<img src="../images/subNav_pass.png">
 			</div>
 			<div class="small-10 columns">
 				<h3>Groceries</h3>
@@ -19,7 +18,6 @@
 		</a>
 		<a href="#" class="row">
 			<div class="small-2 columns">
-				<img src="../images/subNav_alert.png">
 			</div>
 			<div class="small-10 columns">
 				<h3>Girl's Night</h3>
@@ -27,7 +25,6 @@
 		</a>
 		<a href="#" class="row">
 			<div class="small-2 columns">
-				<img src="../images/subNav_guide.png">
 			</div>
 			<div class="small-10 columns">
 				<h3>Camping Trip</h3>

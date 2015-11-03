@@ -1,52 +1,21 @@
 <section class="row">
-	<h2 class="hidden"><?php echo $page; ?> Navigation</h2>
 	<div class="small-4 columns subNav">
-		<a href="#" class="row">
-			<div class="small-2 columns">
-				<img src="../images/subNav_wifi.png">
+		<div class="recSearch">
+			<div class="search">
+				<input type="search" placeholder="Search Recipes" value="Dinner">
 			</div>
-			<div class="small-10 columns">
-				<h3>Wifi</h3>
+			<div class="row">
+				<div class="small-6 columns">
+					<input type="radio"><label>Vegetarian</label><br>
+					<input type="radio"><label>Gluten Free</label><br>
+					<input type="radio"><label>Dairy Free</label>
+				</div>
+				<div class="small-6 columns">
+					<input type="radio"><label>Vegan</label><br>
+					<input type="radio"><label>Organic</label><br>
+					<input type="radio"><label>Low Calorie</label>
+				</div>
 			</div>
-		</a>
-		<a href="#" class="row">
-			<div class="small-2 columns">
-				<img src="../images/subNav_pass.png">
-			</div>
-			<div class="small-10 columns">
-				<h3>Password</h3>
-			</div>
-		</a>
-		<a href="#" class="row">
-			<div class="small-2 columns">
-				<img src="../images/subNav_alert.png">
-			</div>
-			<div class="small-10 columns">
-				<h3>Alerts</h3>
-			</div>
-		</a>
-		<a href="#" class="row">
-			<div class="small-2 columns">
-				<img src="../images/subNav_guide.png">
-			</div>
-			<div class="small-10 columns">
-				<h3>User Guide</h3>
-			</div>
-		</a>
-		<a href="#" class="row">
-			<div class="small-2 columns">
-				<img src="../images/subNav_contact.png">
-			</div>
-			<div class="small-10 columns">
-				<h3>Contact</h3>
-			</div>
-		</a>
-		<a href="#" class="row">
-			<div class="small-2 columns">
-				<img src="../images/subNav_sync.png">
-			</div>
-			<div class="small-10 columns">
-				<h3>Sync</h3>
-			</div>
-		</a>
+			<button>Search Recipes</button>
+		</div>
 	</div>
