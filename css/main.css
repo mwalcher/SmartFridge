@@ -363,6 +363,37 @@ input[type=range]:focus {
 	max-width: 100px;
 }
 
+/* CALENDAR */
+
+#calendar {
+	display: block;
+	margin: 25px auto;
+}
+
+.calEvent h2 {
+	text-align: center;
+	background-color: #808080;
+	margin: 0;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #fff;
+}
+
+.calEvent .row {
+	margin: 0;
+	padding: 10px 25px;
+	background-color: #bbb;
+	border-bottom: 1px solid #fff;
+}
+
+.calEvent h3 {
+	color: #fff;
+	padding-bottom: 5px;
+}
+
+.calEvent p {
+	margin: 0;
+}
+
 /* SETTINGS */
 
 .settings {

@@ -9,8 +9,8 @@ class Calendar extends CI_Controller {
 
 		$this->load->view('Temp/header', $data);
 		$this->load->view('Temp/title');
-		$this->load->view('Calendar/calendarNav');
-		$this->load->view('Settings/settingsWifi');
+		$this->load->view('Calendar/calendarEvent');
+		$this->load->view('Calendar/calendar');
 		$this->load->view('Temp/footer');
 	}
 
