@@ -26,7 +26,7 @@
 		<div class="small-6 small-centered columns converter">
 			<div class="row">
 				<div class="small-8 columns">
-					<input type="text" value="22">
+					<input type="text" value="22" readonly>
 				</div>
 				<div class="small-4 columns">
 					<select>
